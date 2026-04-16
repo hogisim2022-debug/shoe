@@ -14,12 +14,12 @@
     theme: {
       extend: {
         colors: {
-          "primary": "#d8f906",
-          "background-light": "#f8f8f5",
-          "background-dark": "#050505",
-          "surface-dark": "#121212",
-          "muted": "#4B5563",
-          "accent": "#FF2E2E"
+          "primary": "#b7e34b",
+          "background-light": "#ececea",
+          "background-dark": "#0b0b0b",
+          "surface-dark": "#111111",
+          "muted": "#8f99a3",
+          "accent": "#ff6b6b"
         },
         fontFamily: {
           "display": ["Manrope", "sans-serif"],
@@ -33,17 +33,17 @@
 <style>
   body {
     font-family: 'Manrope', sans-serif;
-    background-color: #050505;
-    color: #F9FAFB;
+    background-color: #0b0b0b;
+    color: #F8FAFC;
     -webkit-font-smoothing: antialiased;
   }
   
-  /* Brutalist specific utilities */
+  /* Softened separators */
   .border-b-hard {
-    border-bottom: 1px solid #4B5563;
+    border-bottom: 1px solid #2a2a2a;
   }
   .border-t-hard {
-    border-top: 1px solid #4B5563;
+    border-top: 1px solid #2a2a2a;
   }
   
   /* Hide scrollbar for clean look */
@@ -97,28 +97,28 @@
   </head>
 <body class="bg-background-dark text-white flex flex-col min-h-screen overflow-x-hidden selection:bg-primary selection:text-black">
 <!-- Sticky Marquee Nav -->
-<header class="sticky top-0 z-50 bg-[#050505] border-b-hard h-14 flex items-center overflow-hidden w-full backdrop-blur-md bg-opacity-90">
-<div class="flex whitespace-nowrap animate-marquee font-mono text-sm tracking-wider text-primary">
-<span class="mx-4 font-bold">AJ1 HIGH <span class="text-green-500">+12%</span></span>
-<span class="mx-4 text-muted">•</span>
-<span class="mx-4 font-bold">YEEZY 350 <span class="text-accent">-4%</span></span>
-<span class="mx-4 text-muted">•</span>
-<span class="mx-4 font-bold">DUNK LOW <span class="text-green-500">+8%</span></span>
-<span class="mx-4 text-muted">•</span>
-<span class="mx-4 font-bold">NB 990 <span class="text-green-500">+2%</span></span>
-<span class="mx-4 text-muted">•</span>
-<span class="mx-4 font-bold">SB PINE GREEN <span class="text-primary animate-pulse">LIVE</span></span>
-<span class="mx-4 text-muted">•</span>
+<header class="sticky top-0 z-50 bg-[#0d0d0d] border-b-hard h-14 flex items-center overflow-hidden w-full backdrop-blur-sm bg-opacity-95">
+<div class="flex whitespace-nowrap animate-marquee font-mono text-xs tracking-normal text-[#b7e34b]">
+<span class="mx-5 font-semibold">AJ1 HIGH <span class="text-[#7fd370]">+12%</span></span>
+<span class="mx-5 text-muted">•</span>
+<span class="mx-5 font-semibold">YEEZY 350 <span class="text-[#ff6b6b]">-4%</span></span>
+<span class="mx-5 text-muted">•</span>
+<span class="mx-5 font-semibold">DUNK LOW <span class="text-[#7fd370]">+8%</span></span>
+<span class="mx-5 text-muted">•</span>
+<span class="mx-5 font-semibold">NB 990 <span class="text-[#7fd370]">+2%</span></span>
+<span class="mx-5 text-muted">•</span>
+<span class="mx-5 font-semibold">SB PINE GREEN <span class="text-[#b7e34b]">LIVE</span></span>
+<span class="mx-5 text-muted">•</span>
 <!-- Duplicate for seamless loop -->
-<span class="mx-4 font-bold">AJ1 HIGH <span class="text-green-500">+12%</span></span>
-<span class="mx-4 text-muted">•</span>
-<span class="mx-4 font-bold">YEEZY 350 <span class="text-accent">-4%</span></span>
-<span class="mx-4 text-muted">•</span>
-<span class="mx-4 font-bold">DUNK LOW <span class="text-green-500">+8%</span></span>
-<span class="mx-4 text-muted">•</span>
-<span class="mx-4 font-bold">NB 990 <span class="text-green-500">+2%</span></span>
-<span class="mx-4 text-muted">•</span>
-<span class="mx-4 font-bold">SB PINE GREEN <span class="text-primary animate-pulse">LIVE</span></span>
+<span class="mx-5 font-semibold">AJ1 HIGH <span class="text-[#7fd370]">+12%</span></span>
+<span class="mx-5 text-muted">•</span>
+<span class="mx-5 font-semibold">YEEZY 350 <span class="text-[#ff6b6b]">-4%</span></span>
+<span class="mx-5 text-muted">•</span>
+<span class="mx-5 font-semibold">DUNK LOW <span class="text-[#7fd370]">+8%</span></span>
+<span class="mx-5 text-muted">•</span>
+<span class="mx-5 font-semibold">NB 990 <span class="text-[#7fd370]">+2%</span></span>
+<span class="mx-5 text-muted">•</span>
+<span class="mx-5 font-semibold">SB PINE GREEN <span class="text-[#b7e34b]">LIVE</span></span>
 </div>
 </header>
 <!-- Main Content Scroll Area -->
@@ -126,8 +126,8 @@
 <!-- Hero Drop Card -->
 <section class="w-full h-[530px] relative bg-surface-dark border-b-hard cursor-pointer active-scale overflow-hidden group">
 <!-- Status Badge -->
-<div class="absolute top-4 left-4 z-20 bg-red-500/90 text-white font-extrabold text-sm px-3 py-1 uppercase tracking-widest flex items-center gap-2 border border-red-300/70 shadow-[2px_2px_0px_rgba(255,90,90,0.35)] backdrop-blur-sm">
-<span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
+<div class="absolute top-4 left-4 z-20 bg-white/10 text-white font-semibold text-[11px] px-3 py-1 uppercase tracking-[0.22em] flex items-center gap-2 border border-white/10 shadow-[0_12px_35px_-30px_rgba(0,0,0,0.8)] backdrop-blur-sm">
+<span class="w-2 h-2 rounded-full bg-[#b7e34b] animate-ping"></span>
         JUST DROPPED
       </div>
 <!-- Parallax Image -->
@@ -148,7 +148,7 @@
         </h2>
 <div class="mt-4 flex justify-between items-end">
 <span class="font-mono text-xl font-bold">$225</span>
-<span class="text-sm font-bold text-primary flex items-center gap-1">
+<span class="text-sm font-semibold text-white/90 flex items-center gap-1 bg-white/10 rounded-full px-4 py-2">
             COP NOW <span class="material-symbols-outlined text-base">arrow_forward</span>
 </span>
 </div>
@@ -156,18 +156,18 @@
 </section>
 <!-- Upcoming Drops Feed -->
 <section class="w-full">
-<div class="px-4 py-6 border-b-hard flex justify-between items-end bg-[#050505] sticky top-0 z-40">
+<div class="px-4 py-6 border-b-hard flex justify-between items-end bg-[#0d0d0d] sticky top-0 z-40">
 <h3 class="text-xl font-extrabold uppercase tracking-tight">UPCOMING</h3>
 <span class="font-mono text-xs text-muted">SORT: NEXT DROP</span>
 </div>
 <!-- List Item 1 -->
-<div class="w-full h-[120px] flex border-b-hard bg-surface-dark cursor-pointer active-scale hover:bg-[#1a1a1a] transition-colors">
-<div class="w-[120px] h-full flex-shrink-0 bg-black p-2 border-r border-muted">
-<div class="w-full h-full bg-center bg-contain bg-no-repeat" data-alt="overhead view of a chunky textured beige and grey streetwear sneaker on a dark background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCKWHCpxNHzC-5-YGbwLRmfKNqvdrN7MsWbSVs9_Q0O6rxwLUy8DHIsT6YWB6icUTb_nq019KNQQ2fF7QpzGU6ct8ICuqoXamFpk-Rj1CbBCYG2IaGk9S_NtGUmzzB3rjRgLKjQStU0OdJEl-SXZtrleNlLnkwsw_svGuoSySHgwHEiXeBkpo_ujo5NG4tOnNOkBEkqBa48nliIT2axrOEPe2sID8hHibs6DjJmqY25w6DvIeMy4ZpMW3zLBmS7C0-4YdpZpUv3ic');">
+<div class="w-full h-[120px] flex border-b-hard bg-[#111111] cursor-pointer active-scale hover:bg-[#161616] transition-colors">
+<div class="w-[120px] h-full flex-shrink-0 bg-[#111111] p-3 border-r border-[#2a2a2a]">
+<div class="w-full h-full bg-center bg-contain bg-no-repeat rounded-2xl" data-alt="overhead view of a chunky textured beige and grey streetwear sneaker on a dark background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCKWHCpxNHzC-5-YGbwLRmfKNqvdrN7MsWbSVs9_Q0O6rxwLUy8DHIsT6YWB6icUTb_nq019KNQQ2fF7QpzGU6ct8ICuqoXamFpk-Rj1CbBCYG2IaGk9S_NtGUmzzB3rjRgLKjQStU0OdJEl-SXZtrleNlLnkwsw_svGuoSySHgwHEiXeBkpo_ujo5NG4tOnNOkBEkqBa48nliIT2axrOEPe2sID8hHibs6DjJmqY25w6DvIeMy4ZpMW3zLBmS7C0-4YdpZpUv3ic');">
 </div>
 </div>
 <div class="flex-1 p-4 flex flex-col justify-between relative">
-<div class="absolute top-4 right-4 bg-[#050505] border border-muted px-2 py-0.5">
+<div class="absolute top-4 right-4 bg-[#111111] border border-muted px-2 py-0.5">
 <span class="font-mono text-[10px] text-accent font-bold animate-pulse">02:14:59</span>
 </div>
 <div>
@@ -181,13 +181,13 @@
 </div>
 </div>
 <!-- List Item 2 -->
-<div class="w-full h-[120px] flex border-b-hard bg-surface-dark cursor-pointer active-scale hover:bg-[#1a1a1a] transition-colors">
-<div class="w-[120px] h-full flex-shrink-0 bg-black p-2 border-r border-muted">
-<div class="w-full h-full bg-center bg-contain bg-no-repeat" data-alt="angled shot of a minimalist white and cream low top leather sneaker with subtle stitching" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEOXguH41ee4sbhSh6Pox-u0rBn-Bqeh-uisBuU4lXuWYqeI4L0v8azmamq0G4gflf5F8QIZ_uDGrFqsmbx_nW_jvFaRkrv6kSdsvzhkIdFKIVvKFgnAs4kI1iFWOJrsGW_PTPDg4b4yeD2MSFSxkQzTJvswBpZi46vgI1aVsllEN4ZkzxE425xEuE0DnCPU-Avx1wX-G9aZv8n9IxbpzlKCnWyfAXdSgpuhdHeCRneep9Qc8cH2zWVdd4wbM6bxPBrpoHMBXF8vQ');">
+<div class="w-full h-[120px] flex border-b-hard bg-[#111111] cursor-pointer active-scale hover:bg-[#161616] transition-colors">
+<div class="w-[120px] h-full flex-shrink-0 bg-[#111111] p-3 border-r border-[#2a2a2a]">
+<div class="w-full h-full bg-center bg-contain bg-no-repeat rounded-2xl" data-alt="angled shot of a minimalist white and cream low top leather sneaker with subtle stitching" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEOXguH41ee4sbhSh6Pox-u0rBn-Bqeh-uisBuU4lXuWYqeI4L0v8azmamq0G4gflf5F8QIZ_uDGrFqsmbx_nW_jvFaRkrv6kSdsvzhkIdFKIVvKFgnAs4kI1iFWOJrsGW_PTPDg4b4yeD2MSFSxkQzTJvswBpZi46vgI1aVsllEN4ZkzxE425xEuE0DnCPU-Avx1wX-G9aZv8n9IxbpzlKCnWyfAXdSgpuhdHeCRneep9Qc8cH2zWVdd4wbM6bxPBrpoHMBXF8vQ');">
 </div>
 </div>
 <div class="flex-1 p-4 flex flex-col justify-between relative">
-<div class="absolute top-4 right-4 bg-[#050505] border border-muted px-2 py-0.5">
+<div class="absolute top-4 right-4 bg-[#111111] border border-muted px-2 py-0.5">
 <span class="font-mono text-[10px] text-white">MAY 20</span>
 </div>
 <div>
@@ -201,9 +201,9 @@
 </div>
 </div>
 <!-- List Item 3 -->
-<div class="w-full h-[120px] flex border-b-hard bg-surface-dark cursor-pointer active-scale hover:bg-[#1a1a1a] transition-colors opacity-60">
-<div class="w-[120px] h-full flex-shrink-0 bg-black p-2 border-r border-muted">
-<div class="w-full h-full bg-center bg-contain bg-no-repeat grayscale" data-alt="black and white silhouette image of a classic high top athletic shoe on dark background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUdmSQW_1As81oFTBJvdJgbOJzDQhRr3OFHeTl5OVTTsjNeQVk2q66j1SJTLTRIlEPwDuMqtw08Y-mGbZDDg7_FuwPYO_GrhIGxeWLrt5FisOBFgFAuPs5yCzjvNaBNjJXf84RLlKz51_fI7VnTdCKjg4VDnL1-pvb1WEY52hZRdGwF1gA2l-1S0TcZLV_Xen4hSXgdgJ4DSHZ53OkmllFgXOwyBuTbBY93TDSUoRYTjhr2CYLO6rSUjcrkNJEej0qxMnrtzAfMMk');">
+<div class="w-full h-[120px] flex border-b-hard bg-[#111111] cursor-pointer active-scale hover:bg-[#161616] transition-colors opacity-60">
+<div class="w-[120px] h-full flex-shrink-0 bg-[#111111] p-3 border-r border-[#2a2a2a]">
+<div class="w-full h-full bg-center bg-contain bg-no-repeat grayscale rounded-2xl" data-alt="black and white silhouette image of a classic high top athletic shoe on dark background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUdmSQW_1As81oFTBJvdJgbOJzDQhRr3OFHeTl5OVTTsjNeQVk2q66j1SJTLTRIlEPwDuMqtw08Y-mGbZDDg7_FuwPYO_GrhIGxeWLrt5FisOBFgFAuPs5yCzjvNaBNjJXf84RLlKz51_fI7VnTdCKjg4VDnL1-pvb1WEY52hZRdGwF1gA2l-1S0TcZLV_Xen4hSXgdgJ4DSHZ53OkmllFgXOwyBuTbBY93TDSUoRYTjhr2CYLO6rSUjcrkNJEej0qxMnrtzAfMMk');">
 </div>
 </div>
 <div class="flex-1 p-4 flex flex-col justify-between relative">
@@ -224,24 +224,24 @@
 </main>
 <!-- Shared BottomNavBar Component -->
 <div class="fixed bottom-0 w-full z-50">
-<div class="flex gap-2 border-t border-[#444a21] bg-[#313518] px-4 pb-3 pt-2">
-<a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary" href="#">
-<div class="text-primary flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill" style="font-variation-settings: 'FILL' 1;">
+<div class="flex gap-2 border-t border-[#1f2519] bg-[#0d120f] bg-opacity-95 px-4 pb-3 pt-2 backdrop-blur-sm">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full bg-[#16220f] text-primary" href="#">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#1f2a16] text-primary" style="font-variation-settings: 'FILL' 1;">
 <span class="material-symbols-outlined text-2xl">house</span>
 </div>
 </a>
-<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#c4cc8e]" href="#">
-<div class="text-[#c4cc8e] flex h-8 items-center justify-center" data-icon="Tag" data-size="24px" data-weight="regular">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#9ca18d]" href="#">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#101513] text-[#9ca18d]" style="font-variation-settings: 'FILL' 0;">
 <span class="material-symbols-outlined text-2xl">tag</span>
 </div>
 </a>
-<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#c4cc8e]" href="#">
-<div class="text-[#c4cc8e] flex h-8 items-center justify-center" data-icon="ShoppingCart" data-size="24px" data-weight="regular">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#9ca18d]" href="#">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#101513] text-[#9ca18d]" style="font-variation-settings: 'FILL' 0;">
 <span class="material-symbols-outlined text-2xl">shopping_cart</span>
 </div>
 </a>
-<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#c4cc8e]" href="#">
-<div class="text-[#c4cc8e] flex h-8 items-center justify-center" data-icon="User" data-size="24px" data-weight="regular">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#9ca18d]" href="#">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#101513] text-[#9ca18d]" style="font-variation-settings: 'FILL' 0;">
 <span class="material-symbols-outlined text-2xl">verified_user</span>
 </div>
 </a>
